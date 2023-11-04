@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @comprador %>
+
+<div>
+  <%= link_to "Edit this comprador", edit_comprador_path(@comprador) %> |
+  <%= link_to "Back to compradors", compradors_path %>
+
+  <%= button_to "Destroy this comprador", @comprador, method: :delete %>
+</div>

@@ -1,0 +1,62 @@
+<%= form_with(model: ofertum) do |form| %>
+  <% if ofertum.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ofertum.errors.count, "error") %> prohibited this ofertum from being saved:</h2>
+
+      <ul>
+        <% ofertum.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :saca, style: "display: block" %>
+    <%= form.text_field :saca %>
+  </div>
+
+  <div>
+    <%= form.label :tipo, style: "display: block" %>
+    <%= form.text_field :tipo %>
+  </div>
+
+  <div>
+    <%= form.label :origem, style: "display: block" %>
+    <%= form.text_field :origem %>
+  </div>
+
+  <div>
+    <%= form.label :descricao, style: "display: block" %>
+    <%= form.text_area :descricao %>
+  </div>
+
+  <div>
+    <%= form.label :quantidade_estoque, style: "display: block" %>
+    <%= form.number_field :quantidade_estoque %>
+  </div>
+
+  <div>
+    <%= form.label :barter, style: "display: block" %>
+    <%= form.check_box :barter %>
+  </div>
+
+  <div>
+    <%= form.label :vendedor_id, style: "display: block" %>
+    <%= form.text_field :vendedor_id %>
+  </div>
+
+  <div>
+    <%= form.label :updated_at, style: "display: block" %>
+    <%= form.datetime_field :updated_at %>
+  </div>
+
+  <div>
+    <%= form.label :created_at, style: "display: block" %>
+    <%= form.datetime_field :created_at %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

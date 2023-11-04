@@ -1,0 +1,27 @@
+<%= form_with(model: comprador) do |form| %>
+  <% if comprador.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(comprador.errors.count, "error") %> prohibited this comprador from being saved:</h2>
+
+      <ul>
+        <% comprador.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :cpf_cnpj, style: "display: block" %>
+    <%= form.text_field :cpf_cnpj %>
+  </div>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
