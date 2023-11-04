@@ -1,12 +1,14 @@
 <div id="<%= dom_id comprador %>">
-  <p>
-    <strong>Cpf cnpj:</strong>
-    <%= comprador.cpf_cnpj %>
-  </p>
-
-  <p>
-    <strong>Nome:</strong>
-    <%= comprador.nome %>
-  </p>
-
+  <table>
+    <tr>
+      <td>
+        <strong>CPF/CNPJ:</strong>
+        <%= comprador.cpf_cnpj %>
+      </td>
+      <td>
+        <strong>Nome:</strong>
+        <%= comprador.nome %>
+      </td>
+    </tr>
+  </table>
 </div>

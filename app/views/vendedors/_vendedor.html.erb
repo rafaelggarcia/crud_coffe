@@ -1,17 +1,18 @@
 <div id="<%= dom_id vendedor %>">
-  <p>
-    <strong>Cnpj:</strong>
-    <%= vendedor.cnpj %>
-  </p>
-
-  <p>
-    <strong>Razao social:</strong>
-    <%= vendedor.razao_social %>
-  </p>
-
-  <p>
-    <strong>Site:</strong>
-    <%= vendedor.site %>
-  </p>
-
+  <table>
+    <tr>
+      <td>
+        <strong>CNPJ:</strong>
+        <%= vendedor.cnpj %>
+      </td>
+      <td>
+        <strong>Razão Social:</strong>
+        <%= vendedor.razao_social %>
+      </td>
+      <td>
+        <strong>Site:</strong>
+        <%= vendedor.site %>
+      </td>
+    </tr>
+  </table>
 </div>

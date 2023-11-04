@@ -1,47 +1,46 @@
 <div id="<%= dom_id ofertum %>">
-  <p>
-    <strong>Saca:</strong>
-    <%= ofertum.saca %>
-  </p>
-
-  <p>
-    <strong>Tipo:</strong>
-    <%= ofertum.tipo %>
-  </p>
-
-  <p>
-    <strong>Origem:</strong>
-    <%= ofertum.origem %>
-  </p>
-
-  <p>
-    <strong>Descricao:</strong>
-    <%= ofertum.descricao %>
-  </p>
-
-  <p>
-    <strong>Quantidade estoque:</strong>
-    <%= ofertum.quantidade_estoque %>
-  </p>
-
-  <p>
-    <strong>Barter:</strong>
-    <%= ofertum.barter %>
-  </p>
-
-  <p>
-    <strong>Vendedor:</strong>
-    <%= ofertum.vendedor_id %>
-  </p>
-
-  <p>
-    <strong>Updated at:</strong>
-    <%= ofertum.updated_at %>
-  </p>
-
-  <p>
-    <strong>Created at:</strong>
-    <%= ofertum.created_at %>
-  </p>
-
+  <table>
+    <tr>
+      <td>
+        <strong>Saca:</strong>
+        <%= ofertum.saca %>
+      </td>
+      <td>
+        <strong>Tipo:</strong>
+        <%= ofertum.tipo %>
+      </td>
+      <td>
+        <strong>Origem:</strong>
+        <%= ofertum.origem %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Descricao:</strong>
+        <%= ofertum.descricao %>
+      </td>
+      <td>
+        <strong>Quantidade estoque:</strong>
+        <%= ofertum.quantidade_estoque %>
+      </td>
+      <td>
+        <strong>Barter:</strong>
+        <%= ofertum.barter %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Vendedor:</strong>
+        <%= ofertum.vendedor_id %>
+      </td>
+      <td>
+        <strong>Updated at:</strong>
+        <%= ofertum.updated_at %>
+      </td>
+      <td>
+        <strong>Created at:</strong>
+        <%= ofertum.created_at %>
+      </td>
+    </tr>
+  </table>
 </div>
